@@ -6,7 +6,8 @@
 터미널에 ```npm init``` 을 입력하면 package.json이 생성됩니다.<br>
 Node Slack SDK 중 ```npm install @slack/webhook``` 을 사용했습니다.<br>
 Slack API 홈페이지에 들어가 설정을 해줍니다.
-### 후기 및 느낀점(?)
+후기 및 느낀점(?)
+-------------
 .gitignore란 이름 그대로 Github에 commit and push 목록에서 제외시키는 명단(?)이라는 느낌을 받았습니다.<br>
 원래 url에 Slack API에서 주는 url을 그대로 넣은 후 완성해서 Github에 commit and push를 했지만 Slcak에서 막아버렸습니다.<br>
 url을 그대로 넣으면 악용할 수 있는걸 알게 되어서 .env를 이용해 다시 Github에 commit and push를 해서 정상적으로 올라왔습니다!
