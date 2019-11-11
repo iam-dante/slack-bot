@@ -9,5 +9,5 @@ Node Slack SDK 중 ```$ npm install @slack/webhook``` 을 사용했습니다.<br
 ### 후기 및 느낀점(?)
 - - -
 - .gitignore란 이름 그대로 Github에 commit and push 목록에서 제외시키는 명단(?)이라는 느낌을 받았습니다.<br>
-- 원래 url에 Slack API에서 주는 url을 그대로 넣은 후 완성해서 Github에 commit and push를 했지만 Slcak에서 막아버렸습니다.<br>
-  - dsa
+- ```const url = process.env.WEBHOOK_URL;``` 에 Slack API에서 제공해주는 url을 넣은채로 push를 했는데 놀랍게도 슬랙에서 악용하지 못하게 url을 막아버리는걸 보고 엄청 신기하고 대단하다고 느꼈습니다.
+  - 해결책: .env에 링크를 넣어 대체하는 방식으로 진행했습니다. 
